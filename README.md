@@ -1,2 +1,2 @@
 # dark-mode-toggle
-simple dark mode toggle using html/css and vanilla javascript
+A simple project made with HTML, CSS, and JavaScript following a tutorial from Alura to switch a website template to dark mode when an icon is clicked, inspired by the Lord of the Rings universe.
