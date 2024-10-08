@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --bg-cor: black; /* Cor de fundo inicial */
+    --fonte-cor: #ffffff; /* Cor da fonte inicial */
+    --label-icon: url("./imgs/lua-btn.png"); /* Ícone da lua */
+    --tree-img: url("./imgs/tree-white-removebg.png"); /* Imagem da árvore branca */
+  }
+  
+  body {
+    background: var(--bg-cor);
+    color: var(--fonte-cor);
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    user-select: none;
+    transition: background 4ms, color 2s;
+  }
+  
+  /* Estilo para a label de mudança de tema */
+  .mudar-tema {
+    background-image: var(--label-icon);
+    width: 67px;
+    height: 67px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    cursor: pointer;
+  }
+  
+  /* Ocultar o checkbox que está por trás da label */
+  #btn {
+    display: none;
+  }
+  
+  /* Container da árvore e da frase */
+  .container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Imagem da árvore */
+  .tree {
+    background-image: var(--tree-img);
+    background-size: cover;
+    width: 450px;
+    height: 350px;
+  }
+  
+  /* Estilo da frase */
+  .div-phrase {
+    margin: 80px;
+    text-align: center;
+  }
+  
+  /* Modo claro */
+  .dark-mode {
+    --bg-cor: white; /* Fundo branco no modo claro */
+    --fonte-cor: black; /* Texto preto no modo claro */
+    --label-icon: url("./imgs/sol-btn.png"); /* Ícone de lua para o modo escuro */
+    --tree-img: url("./imgs/tree-black-removebg.png"); /* Imagem da árvore no modo claro */
+  }
+  
